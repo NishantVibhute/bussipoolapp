@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+
+    android:orientation="vertical"
+    tools:context="com.bussinesspoolapp.bussipool.Login">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="@color/BussiPool"
+        android:fontFamily="@font/enriqueta"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Sign Up"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/BussiPool"
+        android:textColorHint="@color/BussiPool"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/edtUserName"
+        android:layout_alignStart="@+id/edtUserName"
+        android:layout_below="@+id/edtUserName"
+        android:layout_marginTop="11dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/BussiPool"
+        android:textColorHint="@color/BussiPool"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtConfPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtPassword"
+
+        android:layout_alignStart="@+id/edtPassword"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Re-type Password"
+        android:inputType="textPassword"
+        android:textColor="@color/BussiPool"
+        android:textColorHint="@color/BussiPool"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/butSignUp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/edtConfPassword"
+        android:layout_alignStart="@+id/edtConfPassword"
+        android:layout_below="@+id/edtConfPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/enriqueta"
+        android:onClick="checkLogin"
+        android:text="SignUp"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtSignUpError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

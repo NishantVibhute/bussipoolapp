@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <EditText
+        android:id="@+id/txt_filter"
+        style="@style/fullwidthTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="search"
+        android:textColorLink="@color/BussiPool" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_load_progress"
+        android:layout_below="@+id/txt_filter"
+        android:text="Loading..."
+        />
+
+
+    <ListView
+        android:id="@+id/lst_contacts_chooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_done"
+        android:layout_below="@+id/txt_load_progress"
+        android:paddingLeft="20dp" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundedbutton"
+        android:text="DONE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

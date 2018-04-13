@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.bussinesspoolapp.bussipool.Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BussiPool"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="49dp"
+            android:fontFamily="@font/enriqueta"
+            android:paddingBottom="90dp"
+            android:text="Bussi Pool"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/enriqueta"
+        android:hint="User Id"
+        android:inputType="textPersonName"
+        android:textColor="@color/BussiPool"
+        android:textColorHint="@color/BussiPool"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/enriqueta"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/BussiPool"
+        android:textColorHint="@color/BussiPool"
+        android:textColorLink="@color/BussiPool"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/butSignIn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/enriqueta"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="Don't have an account? Sign up"
+        android:textColor="@color/BussiPool"
+        android:textColorHint="@color/BussiPool"
+        android:textColorLink="@color/BussiPool"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtErrorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="31dp"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark" />
+
+</RelativeLayout>

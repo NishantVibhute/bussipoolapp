@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/iconrow1"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/iconrow1"
+        android:fontFamily="@font/enriqueta"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/iconrow1"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp"
+            app:srcCompat="@mipmap/like" />
+
+        <TextView
+            android:id="@+id/itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="top|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="66%"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BussiPool"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="5dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="10dp"
+            android:text="VIEW"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bussinesspoolapp.bussipool.CreateUser">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:text="Please Fill Up the Details"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/mname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Middle Name"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/lnam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/iconrow1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="TextView"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone No"
+                android:inputType="phone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Pan Card No"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Aadhar Card No"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BussiPool"
+                android:padding="5dp"
+                android:text="Enter your bank details. This details are required when we release your payment"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/bankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Bank Name"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ifscCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ifsc Code"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/branchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Branch Name"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/bankAccountNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Bank Account No"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/BussiPool"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/saveUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:text="SAVE"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

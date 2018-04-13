@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d3e50</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="BussiPool">#2d3e50</color>
+    <color name="BussiPoolSecondary">#1bbc9b</color>
+    <color name="iconrow1">#f5f5f5</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bussinesspoolapp.bussipool.Promote">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/BussiPool"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtContactCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/BussiPool"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Select Contacts"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/selectContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="ADD"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtMessage"
+        style="@style/fullwidthTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/butSendPromotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/roundedbutton"
+        android:foregroundGravity="bottom"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="SEND"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+</LinearLayout>
